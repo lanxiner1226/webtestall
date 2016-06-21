@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+   <title>flower test</title>
+   <style>
+   .cube{
+   position:fixed;
+   left:50%;
+   top:12px;
+   }
+   .cube.one{
+   top:200px;
+   left:50%;
+   margin-left:-200px;
+   }
+   .cube img{
+   width:200px;
+   height:200px;}
+   
+     .topFace div,.leftFace,.rightFace{
+     width:200px;
+     height:200px;
+     border:1px solid #ddd;
+     overflow:hidden;
+     position:absolute;
+     }
+     .cube:hover .rightFace,.cube:hover .leftFace,.cube:hover .topFace div{
+     background-color:red;}
+     .cube:hover .rightFace:hover, .cube:hover .leftFace:hover, .cube:hover .topFace:hover div{
+     background-color:blue;}
+     .leftFace{
+     -webkit-transform:skew(0deg,30deg);
+     background-color:#ccc;
+     -moz-transform:skew(0deg,30deg);
+     }
+     .rightFace{
+     -webkit-transform:skew(0deg,-30deg);
+     -moz-transform:skew(0deg,-30deg);
+     background-color:#ddd;
+     left:180px;
+     }
+     .topFace div{
+     -webkit-transform:skew(0deg,-30deg) scale(1,1.16);
+     -moz-transform:skew(0deg,-30deg) scale(1,1.16);
+     bakcground-color:#eee;
+     font-size:0.862em;}
+     .topFace{
+     -webkit-transform:rotate(60deg);
+     -moz-transform:rotate(60deg);
+     top:-142px;
+     left:89px;
+     }
+   </style>
+ </head>
+ <body>
+   <div class="cube one">
+      <div class="topFace">
+        <div>
+         <img src="../images/xiuqiuhua.png"/>
+        </div>
+      </div>
+      <div class="leftFace">
+        <img src="../images/taohua.png"/>
+      </div>
+      <div class="rightFace">
+        <img src="../images/yinghua.png"/>
+      </div>
+   </div>
+ </body>
+</html>

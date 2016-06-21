@@ -1,0 +1,79 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+ <head runat="server">
+    <title>无标题页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery.table2excel.min.js"></script>
+ </head>
+ <body>
+   <h3 id="title">成绩单</h3>
+   <table id="Table1" cellpadding="0" cellspacing="0" style="width:90%">
+    <caption>成绩单hello</caption>
+   <thead>
+            <tr>
+                <td>
+                    姓名</td>
+                <td>
+                    学号</td>
+                <td>
+                    语文</td>
+                <td>
+                    数学</td>
+                    <td style="display:none">
+                    英语
+                    </td>
+            </tr>
+    </thead>
+            <tr>
+                <td>
+                    张三</td>
+                <td>
+                    200118056</td>
+                <td>
+                    78</td>
+                <td>
+                    95</td>
+                    <td style="display:none">100</td>
+            </tr>
+            <tr>
+                <td>
+                    李四</td>
+                <td>
+                    201118057</td>
+                <td>
+                    89</td>
+                <td>
+                    37</td>
+                    <td style="display:none">100</td>
+            </tr>
+            <tr>
+                <td>
+                    王五</td>
+                <td>
+                    201118058</td>
+                <td>
+                    92</td>
+                <td>
+                    88</td>
+                    <td style="display:none">100</td>
+            </tr>
+        </table>
+        <button type="button" onclick="excel()">导出为excel</button>
+        <script>
+          function excel(){
+        	  var title = $("#title").text();
+        	  $("#Table1").table2excel({
+        		  exclude: ".noExl",
+					name: "Excel Document Name",
+					filename: title,
+					exclude_img: true,
+					exclude_links: true,
+					exclude_inputs: true
+        	  });
+          }
+          
+
+  
+        </script>
+ </body>
+ </html>

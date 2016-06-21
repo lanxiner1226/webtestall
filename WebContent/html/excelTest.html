@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang = "zh">
+<head>
+  <meta http-equiv="content-Type" content="text/html;charset=utf-8" />
+  <title>excel测试</title>
+</head>
+<body>
+  <table id="excelTest">
+    <thead>
+      <tr>
+        <td>list1</td>
+        <td>list2</td>
+        <td>list3</td>
+        <td>list4</td>
+        <td>list5</td>
+      </tr>
+    </thead>
+    <tbody>
+       <tr>
+         <td>row0col0</td>
+         <td>row0col1</td>
+         <td>row0col2</td>
+         <td>row0col3</td>
+       </tr>
+       <tr>
+         <td>row1col0</td>
+         <td>row1col1</td>
+         <td>row1col2</td>
+         <td>row1col3</td>
+       </tr>
+       <tr>
+         <td>row2col0</td>
+         <td>row2col1</td>
+         <td>row2col2</td>
+         <td>row2col3</td>
+       </tr>
+       <tr>
+          <td>row3col0</td>
+          <td>row3col1</td>
+          <td>row3col2</td>
+          <td>row3col3</td>
+       </tr>
+    </tbody>
+    <button type="button" onclick="method1(excelTest)">下载</button>
+  </table>
+  <script>
+  function method1(tableid) {
+
+	    var curTbl = document.getElementById(tableid);
+	    var oXL = new ActiveXObject("Excel.Application");
+	    var oWB = oXL.Workbooks.Add();
+	    var oSheet = oWB.ActiveSheet;
+	    var sel = document.body.createTextRange();
+	    sel.moveToElementText(curTbl);
+	    sel.select();
+	    sel.execCommand("Copy");
+	    oSheet.Paste();
+	    oXL.Visible = true;
+
+	}
+  </script>
+ </body>
+ </html>

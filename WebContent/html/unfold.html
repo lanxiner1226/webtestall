@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset=utf8>
+    <style>
+    *{
+    margin:0px;
+    padding:0px;
+    }
+    .fold{
+     margin:0 auto;
+     margin-top:50px;
+     width:1000px;
+    }
+     img{
+     width:300px;
+     height:300px;
+     }
+
+   </style>
+  <script src="../js/jquery-1.11.1.min.js"></script>
+</head>
+  <body>
+     <div class="fold">
+        <div id="fold">
+           <img id="piece" src="../images/foldimages/3pieces.jpg"/>
+        </div>
+        <div id="unfold">
+          <img id="piece1" src="../images/foldimages/3pieces-1.jpg"/>
+          <img id="piece1" src="../images/foldimages/3pieces-2.jpg"/>
+          <img id="piece1" src="../images/foldimages/3pieces-3.jpg"/>
+        </div>
+     </div>
+       <script>
+       
+       $(window).load(function(){
+    	   $("#unfold").hide();
+    	   var count = $("#unfold > img").length;
+    	   var imgs = $("#unfold > img");
+    	   alert(imgs[0].id);
+    	   alert(count);
+    	   $("#piece").mouseover(function(){
+    		   $("#piece").fadeOut(100,function(){
+     			  $("#unfold").show();
+     		  })
+    	   })
+    	   
+    	     $("#unfold").mouseout(function(){
+        		  $("#unfold").fadeOut(100,function(){
+        			  $("#piece").show();
+        			 
+        		  })
+        		 
+        	  })
+       })
+     
+   
+    	
+      
+    </script>
+  </body>
+  </html>

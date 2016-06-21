@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+   <title>login test</title>
+   <style>
+    body{
+    font-size:12px;}
+    *{
+    margin:0px;
+    padding:0px;
+    }
+    .myform{
+    margin:0 auto;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    width:500px;
+    margin-top:100px;
+    padding:14px;
+    border:2px solid #b7ddf2;
+    background-color:#ebf4fb;
+    }
+    .myform h1{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:8px;
+    }
+    .myform p{
+    font-size:14px;
+    color:#666;
+    margin-bottom:20px;
+    border-bottom:1px solid #b7ddf2;
+    padding-bottom:10px;
+    }
+    .myform label{
+    font-weight:bold;
+    text-align:right;
+    width:140px;
+    display:block;
+    float:left;
+  }
+  .myform .small{
+  color:#666;
+  display:block;
+  font-size:11px;
+  font-weight:normal;
+  text-align:right;
+  width:140px;
+  }
+  .myform input{
+  float:left;
+  font-size:12px;
+  padding:4px 2px;
+  border:1px solid #aacfe4;
+  width:200px;
+  margin:2px 0 20px 10px;
+  }
+  .myform button{
+  clear:both;
+  margin-left:150px;
+  width:125px;
+  height:31px;
+  background:#666;
+  text-align:center;
+  color:#fff;
+  font-size:11px;
+  font-weight:bold;}
+  input:focus,button:focus{
+  outline:thick solid #b7ddf2;}
+  input:active,button:active{
+  outline:thick solid #aaa;}
+   </style>
+ </head>
+ <body>
+   <div id="myform" class="myform">
+     <form id="form1" class="form1">
+       <h1>登录</h1>
+       <p>请准确填写个人信息</p>
+       <label for="username">Name<span class="small">姓名</span></label>
+       <input type="text" name="username" id="username" autofocus />
+       <label for="email">Email<span class="small">邮箱</span></label>
+       <input type="text" name="email" id="email"  />
+       <label for="password">Password<span class="small">密码</span></label>
+       <input type="password" name="password" id="password"/>
+       <button type="submit">登录</button>
+       
+     </form>
+   </div>
+ </body>
+</html>

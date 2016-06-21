@@ -1,0 +1,157 @@
+*{
+   margin:0;
+   padding:0;
+}
+html{
+}
+img{border:0;}
+body{
+margin:0 auto; 
+max-width:100%;
+width:100%;
+font-family:"simhei","ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3",sans-serif;
+}
+.header{
+background:url(../images/triangle.png) no-repeat;
+width:100%;
+height:425px;
+position:relative;
+}
+#logo{
+	width:166px
+	height:41px;
+    left:18px;
+    top:24px;
+     position:absolute;
+	 
+}
+#logo img{
+border:0;
+}
+#en{
+	float:right;
+	background:#000;
+	color:#FFF;
+	font-size:0.5em;
+	padding:5px 5px;
+	}
+#en a{
+	text-decoration:none;
+	color:#FFF;
+}
+
+.nav{
+   width:120px;
+    left:80px;
+    top:82px;
+    position:absolute;
+}
+.nav ul
+{
+width:80px;
+float:left;
+}
+
+.nav ul li{
+  list-style-type:none;
+  text-align:right;
+   color:#8798b1;
+   font-size:0.8em;
+   line-height:15px;
+}
+.nav ul li a{
+   text-decoration:none;
+   color:#8798b1;
+}
+.nav ul li a:hover{
+   color:#FFFFFF;
+}
+.nav .arrow{
+width:15px;
+float:left;
+padding-left:10px;
+}
+.nav .arrow li{
+  list-style-type:none;
+width:10px;
+height:15px;
+line-height:15px;
+}
+.nav .arrow li img{
+border:0;
+}
+
+
+.footer{
+width:80%;
+height:24px;
+background:url(../images/bgbottom.png) repeat-x;
+position:fixed;
+bottom:0;
+right:0;
+color:#dddddd;
+font-size:0.8em;
+z-index:5;
+}
+
+.search{
+width:188px;
+height:22px;
+border:0;
+padding:1px 1px;
+float:left;
+}
+
+.search #txt{
+width:164px;
+height:22px;
+background:#6e6e6f;
+border:0;
+color:#999999;
+float:left;
+}
+.search #btn{
+width:24px;
+height:24px;
+background:url(../images/button.png) no-repeat;
+float:left;
+border:0;
+}
+input{
+	outline:none;
+  font-family:"simhei";
+}
+
+.btnav{
+float:left;
+margin-left:12px;
+width:210px;
+line-height:24px;
+}
+.btnav a{
+text-decoration:none;
+color:#dddddd;
+}
+
+
+.copyright{
+float:right;
+margin-right:5px;
+line-height:24px;
+font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3",sans-serif;
+}
+
+#playBox{ width:1580px; height:800px;margin:0 auto; background:#333;overflow:hidden;display:inline;list-style:none;}
+#playBox .oUlplay { width:99999px; position:absolute; left:0; top:0;}
+#playBox .oUlplay li{ float:left; width:1580px; height:800px;}
+#playBox .oUlplay li img{border:0;}
+
+#playBox .smalltitle {width:180px; height:24px; position:fixed; bottom:0px;left:60%;z-index:1000;}
+
+#playBox .smalltitle .pre{ cursor:pointer; width:24px; height:24px; background:url(../images/buttonl.png) no-repeat; z-index:10;float:left;position:absolute;}
+#playBox .smalltitle .next{ cursor:pointer; width:24px; height:24px; background:url(../images/button.png) no-repeat; z-index:10;float:left;position:absolute;margin-left:150px;}
+#playBox .smalltitle span{display:block;margin-left:-30px;float:left;color:#666666;font-size: 0.8em;line-height: 24px;}
+
+#playBox .smalltitle ul{ width:120px; margin:0 auto;line-height:24px;}
+#playBox .smalltitle ul li{ width:10px; height:10px; margin:6px 5px; border-radius:10px; background:#ffffff; float:left; overflow:hidden;*display:inline;*zoom:1;}
+#playBox .smalltitle .thistitle{ background:#071a40;}

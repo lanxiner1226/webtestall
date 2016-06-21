@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>首页</title>
+<link rel="stylesheet" href="../css/style.css"/>
+<script type="text/javascript" src="..js/ie6png.js"></script>
+
+</head>
+
+<body>	
+    
+	<div class="wrap search">
+	     <fieldset>
+        	<input id="txt" type="text" value="搜索一下" onFocus="if(value=='搜索一下') {value=''}" onBlur="if(value=='') {value='搜索一下'}"/>
+			<input id="btn" type="button" value=""/>
+	    </fieldset>
+	</div><!--search over-->
+
+	<div class="wrap nav">
+          <div class="nav_left"><img src="../images/kitchen/logox.png"/></div>
+          <div class="nav_right">
+          	  <ul>
+          	  	  <li style="height:97px;display:block;background-color:#009a44;"><a href="index" style="color:#ffffff;">首页<br/><div class="en">HOME</class></a></li>
+          	  	  <li><a href="about.html">关于我们<br/><div class="en">ABOUT</class></a></li>
+          	  	  <li><a href="products.html">产品中心<br/><div class="en">PRODUCTS</class></a></li>
+          	  	  <li><a href="news.html">新闻中心<br/><div class="en">NEWS</class></a></li>
+          	  	  <li><a href="message.html">用户留言<br/><div class="en">MESSAGE</class></a></li>
+          	  	  <li><a href="contact.html">联系我们<br/><div class="en">CONTACT</class></a></li>
+          	  </ul>
+          </div>
+	</div><!--nav over-->
+	
+	<div class="banner">
+		<div class="wrap ad">
+
+			<div class="more"><a href="about.html">VIEW MORE</a></div>
+		</div>
+	    
+	    <div class="wrap product">
+	    	<div class="green">
+	    		<div class="title">
+			     产品分类<br/><div class="en">PRODUCTS LIST</div>
+		         <hr width="100"  color="white" align="left" size=7 style="margin-top:25px;">
+		     </div>
+	    	</div><!--green over-->
+
+	    	<div class="product_list">
+	    		<div class="product_brown"><img src="../images/kitchen/product-01.png"/></div>
+	    		<div class="product_grey"><img src="../images/kitchen/product-02.png"/></div>
+	    		<div class="product_brown"><img src="../images/kitchen/product-03.png"/></div>
+	    		<div class="product_grey"><img src="../images/kitchen/product-04.png"/></div>
+	    		<div class="product_brown"><img src="../images/kitchen/product-05.png"/></div>
+	    		<div class="product_green"><a href="products.html">更多产品>></a></div>
+	    	</div><!--product_list over-->
+
+	    </div><!--product over-->
+
+
+	</div><!--banner over-->
+
+   <div class="clear"></div>
+
+	<div class="about">
+        <div class="wrap">
+            <div class="about_left">
+            	<div class="title">
+            		关于我们<br/><div class="en">ABOUT US</div>
+            		<hr width="100"  align="left" color="#009a44" size=7 style="margin-top:20px;">
+            	</div>
+            	<div class="about_more">
+            		<p><br/><br/><br/><br/></p>
+            		<a href="about.html" style="float:right;">查看更多>></a></div>
+            </div>
+            <div class="about_right"><img src="../images/kitchen/about_03.jpg"/></div>
+        </div>
+		
+	</div><!--about over-->
+
+
+	<div class="wrap service">
+		<div class="title">
+            		服务与支持<br/><div class="en">SERVICE AND SUPPORT</div>
+            		<hr width="100" align="left" color="#009a44" size=7 style="margin-top:18px;">
+            	</div>
+         <div class="service_left">
+         	  <ul>
+         	  	 <li><img src="../images/kitchen/service_01.png"/><a href="#">自助人工服务</a></li>
+         	  	 <li><img src="../images/kitchen/service_02.png"/><a href="#">上门安装/维修</a></li>
+         	  	 <li><img src="../images/kitchen/service_03.png"/><a href="#">后台相应</a></li>
+         	  	 <li><img src="../images/kitchen/service_04.png"/><a href="#">后期跟踪</a></li>
+         	  </ul>
+         </div><!--service_left over-->
+         <div class="service_mid">
+         	   <div class="service_mid_head">
+         		     <img src="../images/kitchen/map.png"/><p>附近服务中心<br/><span>Nearby service center</span></p>
+             </div>
+             <div class="service_mid_cen">
+                  <ul>
+				      <li><span>省份：</span>
+				      	<select id="province">
+                           <option value=""></option>
+                           <option value="北京">北京</option>
+                           <option value="上海">上海</option>
+                           <option value="河南">河南</option>
+                           <option value="湖北">湖北</option>
+				      	</select>
+				      </li>
+					  <li><span>城市：</span>
+					  	<select id="city">
+					  		<option value=""></option>
+					  		<option value="北京">北京</option>
+					  		<option value="上海">上海</option>
+					  		<option value="郑州">郑州</option>
+					  		<option value="武汉">武汉</option>
+					  	</select></li>
+				  </ul>
+
+                  <!-- <ul>
+				      <li><span>省份：</span><select id="province" runat="server" onchange="selectprovince(this);"></select></li>
+					  <li><span>城市：</span><select id="city" runat="server" ></select></li>
+				   </ul>  -->
+
+
+                
+             </div>
+             <div class="service_mid_bot"><p>&nbsp;&nbsp;&nbsp;&nbsp;服务网点定期更新，详情请拨打官方免费热线400-888-6288查询实时情况。</p></div>
+         </div><!--service_mid over-->
+         <div class="service_right">
+		     <a href="contact.html"><img src="../images/kitchen/kefus_06.png"/><p>在线客服<br/><span>ONLINE SERVICE</span></p></a>
+		 </div>
+	</div><!--service over-->
+ 
+
+
+   <div class="clear"></div>
+	
+	<div class="foot">
+        <div class="wrap foot_right">
+		   <a href="contact.html"><img src="../images/kitchen/foot_03.png"/></a>
+		   <a href="contact.html"><img src="../images/kitchen/foot_02.png"/></a>
+		   <a href="contact.html"><img src="../images/kitchen/foot_01.png" style="margin-right:120px;"/></a>
+		</div>
+	</div>
+</body>
+</html>

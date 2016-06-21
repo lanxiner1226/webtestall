@@ -1,0 +1,83 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	color:#000;
+	background:#fff;
+	font-size:12px;
+}
+ol,ul{
+	list-style:none;
+}
+a{
+	color:#333;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+	color:#c00;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+.hidden{
+	visibility:hidden;
+}
+
+.arrowup{
+	display:inline-block;
+     width:13px;
+	height:6px;
+	background:url("../images/jdimages/top.png") no-repeat -15px -283px;
+}
+/* shortcut*/
+#shortcut{
+	background:rgb(241,241,241);
+	height:30px;
+	width:100%;
+	line-height:30px;
+}
+#shortcut-m{
+	width:1210px;
+	margin:0 auto;
+	border:solid 1px blue;
+	height:100%;
+}
+#shortcut-m .fl li{
+	margin-left:10px;
+}
+
+
+#shortcut-m .fr li{
+	float:left;
+	width:70px;
+	height:30px;
+
+}
+
+#shortcut-m .fr li a{
+	    height:15px;
+		border-right:solid 1px #ccc;
+		padding:0px 8px;
+}
+#shortcut-m .fr .li1{
+	width:140px;
+	
+}
+#shortcut-m .fr .li1 a{
+	border-right:none;
+	padding:0px;
+}
+#shortcut-m .fr li dd a{
+	border:none;
+	padding:0px;
+}
+#shortcut-m .fr li dd p{
+	height:25px;
+}
+

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+   <title>Transparant test</title>
+   <style>
+     .div1,.div3,.div4,.div5,.div6,.div7{
+     margin:300px 0px;
+     width:100px;
+     height:50px;
+     margin-left:100px;
+     background-color:red;}
+     .div1:hover{
+     -moz-transform:rotate(-60deg) scale(2) translate(50px,50px);
+     }
+     .div2{
+     width:600px;
+     height:100px;
+     background-color:blue;
+     margin-top:15px;}
+     .div2:hover{
+     -moz-transform:translate(10px,-20px);
+     }
+     .div3{
+     background-color:green;
+     }
+     .div3:hover{
+     -moz-transform:skew(60deg,-20deg);}
+     .div4{
+     background-color:yellow;}
+     .div4:hover{
+     -moz-transform:matrix(1,0.4,0,1,0,0);}
+     .div5,.div6,.div7{
+     height:100px;
+     background-color:black;}
+     .div5:hover{
+     -moz-transform:translate(80px,80px) rotate(45deg) scale(1.5,1.5);}
+     .div6:hover{
+     -moz-transform:rotate(-30deg);}
+     .div7:hover{
+     -moz-transform-origin:top right;
+     -moz-transform:rotate(-30deg);
+     }
+     .div8{
+     position:relative;
+    width:100px;
+     height:100px;
+     background-color:red;
+     margin-top:20px;
+      -moz-transform:rotate(0deg);
+     left:0px;
+     -moz-transition:left 3s linear, -moz-transform 3s linear;}
+     .div8:hover{
+     left:500px;
+     -moz-transform:rotate(-30deg);
+     }
+     .div9{
+     margin-top:10px;
+     width:200px;
+     height:200px;
+     background-color:Aqua;
+     }
+     .div9:hover{
+     background-color:black;
+     -moz-transition-property:background-color;
+     -moz-transition-duration:2s;
+     -moz-transition-timing-function:linear;}
+   </style>
+ </head>
+ <body>
+   <div class="div1"></div>
+   <div class="div2"></div>
+   <div class="div3"></div>
+   <div class="div4"></div>
+   <div class="div5"></div>
+   <div class="div6"></div>
+   <div class="div7"></div>
+   <div class="div8"></div>
+   <div class="div9"></div>
+ </body>
+</html>
